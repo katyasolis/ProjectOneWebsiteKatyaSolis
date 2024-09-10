@@ -5,3 +5,20 @@ html, body {
   canvas {
     display: block;
   }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+  }
+
+  /*a:hover {
+    color: #bd814d;
+  }*/
+
+  main {
+    background-color:#bd814d; 
+
+  }
