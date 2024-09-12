@@ -1,8 +1,8 @@
 function setup() {
     createCanvas(window.innerWidth, window.innerHeight); //Create a canvas that is the size of the window
     CanvasCaptureMediaStreamTrack.position(0, 0); //Set the position of the canvas to (0, 0)
-    image.style('z-index', '-1');
-    image.style('position', 'fixed');
+    canvas.style('z-index', '-1');
+    canvas.style('position', 'fixed');
   }
 
   function windowResized() {
