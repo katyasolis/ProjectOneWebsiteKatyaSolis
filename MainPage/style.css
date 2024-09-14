@@ -19,3 +19,18 @@ html, body {
     background-color:#be8c60; 
     
   }
+
+
+  /* styles.css - Camera Object Styling */
+#cameraObject {
+  width: 200px; /* Set the width of the image */
+  height: auto; /* Maintain the aspect ratio */
+  border: 2px solid #000; /* Add a border */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+  transition: transform 0.2s; /* Add a transition effect */
+}
+
+#cameraObject:hover {
+  transform: scale(1.1); /* Scale up the image on hover */
+}
