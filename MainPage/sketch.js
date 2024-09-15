@@ -13,10 +13,13 @@ function setup() {
     let Camera = select("#cameraObject");
 
     Camera.mousePressed(() => {
-      window.location.href = "http://127.0.0.1:3000/ItemOnePage/item-one.html";
+      goToDifferentPage();
     });
   }
 
+  function goToDifferentPage(){
+    window.location.href = "http://127.0.0.1:3000/ItemOnePage/item-one.html";
+  }
 
   function windowResized() {
     resizeCanvas(window.innerWidth, window.innerHeight); //Resize the canvas to the size of the window
