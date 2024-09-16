@@ -1,18 +1,22 @@
+let canvas; //Declare a variable to store the canvas
+let Room = select("#environment");
+let Camera = select("#cameraObject");
+let Mirror = select("#mirrorObject");
+let Shell = select("#shellObject");
 
+  function preload() {
+    Room = loadImage("/Images/EUI_Project_1_Background - pre finished project.png");
+    Camera = loadImage("/Images/Camera Item Big.png");
+    Mirror = loadImage("/Images/EUI_Project_1_Mirror.png");
+    Shell = loadImage("/Images/EUI_Project_1_Shell.png");
+  }
 
-function preload() {
-  Camera = loadImage("/Images/Camera Item.png"); // Load the image
-}
-
-function setup() {
-    createCanvas(window.innerWidth, window.innerHeight); //Create a canvas that is the size of the window
+  function setup() {
+    canvas = createCanvas(window.innerWidth, window.innerHeight); //Create a canvas that is the size of the window
     canvas.position(0, 0); //Set the position of the canvas to (0, 0)
     canvas.style('z-index', '-1');
     canvas.style('position', 'fixed');
 
-    let Camera = select("#cameraObject");
-    let Mirror = select("#mirrorObject");
-    let Shell = select("#shellObject");
 
     Camera.mousePressed(() => {
       goToDifferentPage();
@@ -25,6 +29,18 @@ function setup() {
     Shell.mousePressed(() => {
       goToDifferentPageThree();
     });
+  }
+
+  function draw() {
+    background(255); //Set the background color to white
+
+    if (Room) {
+      image(Room, 0, 0, window.innerWidth, window.innerHeight);
+    }
+
+    if (Camera) {
+      image(Camera, 50, 50, 100, 100);
+    }
   }
 
   function goToDifferentPage(){

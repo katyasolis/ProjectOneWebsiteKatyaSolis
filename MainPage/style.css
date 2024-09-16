@@ -16,21 +16,60 @@ html, body {
 
 
   main {
-    background-color:#a87c56; 
-    
+    display: flex;
+    padding-top:10px;
   }
 
+  main {
+    display: flex;
+    justify-content: center; /* Center-align the content horizontally */
+    align-items: center; /* Center-align the content vertically */
+    padding-top: 5px;
+  }
+  
+  h1 {
+    font-size: 40px;
+    color: #f3e3c4;
+    padding-top: 1%;
+  }
 
-  /* styles.css - Camera Object Styling */
+    body {
+      background-color: #a87c56;
+    }
+
+
+
+
+  /* styles.css - Object Styling */
 #cameraObject {
-  width: 200px; /* Set the width of the image */
+  width: 8%; /* Set the width of the image */
   height: auto; /* Maintain the aspect ratio */
-  border: 2px solid #000; /* Add a border */
-  border-radius: 10px; /* Add rounded corners */
+  /*border: 2px solid #000; 
+  border-radius: 10px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
   transition: transform 0.2s; /* Add a transition effect */
 }
 
+#mirrorObject {
+  width: 40%; /* Set the width of the image */
+  height: auto; /* Maintain the aspect ratio */
+  transition: transform 0.2s; /* Add a transition effect */
+}
+
+#shellObject {
+  width: 7%; /* Set the width of the image */
+  height: auto; /* Maintain the aspect ratio */
+  transition: transform 0.2s; /* Add a transition effect */
+}
+
 #cameraObject:hover {
+  transform: scale(1.15); /* Scale up the image on hover */
+}
+
+#mirrorObject:hover {
+  transform: scale(1.15); /* Scale up the image on hover */
+}
+
+#shellObject:hover {
   transform: scale(1.15); /* Scale up the image on hover */
 }
