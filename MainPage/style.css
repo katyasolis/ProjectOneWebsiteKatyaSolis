@@ -16,7 +16,7 @@ html, body {
 
 
   main {
-    background-color:#be8c60; 
+    background-color:#a87c56; 
     
   }
 
@@ -32,5 +32,5 @@ html, body {
 }
 
 #cameraObject:hover {
-  transform: scale(1.1); /* Scale up the image on hover */
+  transform: scale(1.15); /* Scale up the image on hover */
 }
