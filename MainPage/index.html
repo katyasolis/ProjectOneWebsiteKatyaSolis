@@ -15,10 +15,12 @@
   <main>
       <h1> Welcome to the "junk" room</h1>
     </main>
-    <img id="environment" src="/Images/EUI_Project_1_Background - pre finished project.png">
-    <img id="cameraObject" src="/Images/Camera Item Big.png" alt="Camera Image" onclick="goToDifferentPage()">
-    <img id="mirrorObject" src="/Images/EUI_Project_1_Mirror.png" alt="Mirror Image" onclick="goToDifferentPageTwo()">
-    <img id="shellObject" src="/Images/EUI_Project_1_Shell.png" alt="Shell Image" onclick="goToDifferentPageThree()">
+    <div class="image-container">
+      <img id="environment" src="/Images/EUI_Project_1_Background - pre finished project.png" class="background-image">
+      <img id="cameraObject" src="/Images/Camera Item Big.png" alt="Camera Image" class="foreground-items" onclick="goToDifferentPage()">
+      <img id="mirrorObject" src="/Images/EUI_Project_1_Mirror.png" alt="Mirror Image" class="foreground-items" onclick="goToDifferentPageTwo()">
+      <img id="shellObject" src="/Images/EUI_Project_1_Shell.png" alt="Shell Image" class="foreground-items" onclick="goToDifferentPageThree()">
+    </div>
     <script src="sketch.js"></script>
     
   </body>

@@ -60,6 +60,3 @@ let Shell = select("#shellObject");
     mouseX = width/2;
     mouseY = height/2;
   }
-
-
-
