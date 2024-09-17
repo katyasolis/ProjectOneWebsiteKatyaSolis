@@ -28,7 +28,8 @@ html, body {
   }
   
   h1 {
-    font-size: 40px;
+    text-align: center;
+    font-size: 200%;
     color: #f3e3c4;
     padding-top: 1%;
   }

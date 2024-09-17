@@ -31,7 +31,7 @@ let Shell = select("#shellObject");
     });
   }
 
-  function draw() {
+  /*function draw() {
     background(255); //Set the background color to white
 
     if (Room) {
@@ -41,7 +41,7 @@ let Shell = select("#shellObject");
     if (Camera) {
       image(Camera, 50, 50, 100, 100);
     }
-  }
+  }*/
 
   function goToDifferentPage(){
     window.location.href = "http://127.0.0.1:3000/ItemOnePage/item-one.html";

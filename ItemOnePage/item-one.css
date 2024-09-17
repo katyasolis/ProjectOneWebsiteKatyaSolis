@@ -1,9 +1,34 @@
 /* item-one.css */
-body {
-    background-color: lightblue;
-  }
+
+h1 {
+  color: rgb(203, 203, 209);
+  text-align: right; 
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  height: auto;
+  position: relative; /* Ensure the image is positioned relatively */
   
-  h1 {
-    color: darkblue;
-    font-family: Arial, sans-serif;
-  }
+}
+
+body {
+  background-color: rgb(43, 47, 48);
+  text-align: center;
+}
+
+a {
+  color: rgb(203, 203, 209);
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  display: inline-block; /* Corrected to inline-block */
+  text-align: center;
+}
+
+a:hover {
+  color: rgb(91, 190, 214);
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+}
