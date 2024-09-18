@@ -1,8 +1,6 @@
-let canvas; //Declare a variable to store the canvas
-let Room = select("environment");
-let Camera = select("#cameraObject");
-let Mirror = select("#mirrorObject");
-let Shell = select("#shellObject");
+let canvas; 
+let Room, Camera, Mirror, Shell;
+let tooltip;
 
   function preload() {
     Room = loadImage("/Images/EUI_Project_1_Background - pre finished project.png");
@@ -49,3 +47,26 @@ let Shell = select("#shellObject");
     mouseX = width/2;
     mouseY = height/2;
   }
+
+
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const cameraObject = document.getElementById('cameraObject');
+    const tooltip = document.getElementById('tooltip');
+  
+    cameraObject.addEventListener('mouseover', (e) => {
+      tooltip.innerHTML = 'This is a camera'; // Set the tooltip text
+      tooltip.style.display = 'block';
+      tooltip.style.left = `${e.pageX + 10}px`;
+      tooltip.style.top = `${e.pageY + 10}px`;
+    });
+  
+    cameraObject.addEventListener('mousemove', (e) => {
+      tooltip.style.left = `${e.pageX + 10}px`;
+      tooltip.style.top = `${e.pageY + 10}px`;
+    });
+  
+    cameraObject.addEventListener('mouseout', () => {
+      tooltip.style.display = 'none';
+    });
+  });
+

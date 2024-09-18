@@ -61,6 +61,15 @@ html, body {
     opacity: 1;
   }
 
+  .tooltip {
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    display: none; /* Hide the tooltip by default */
+    z-index: 10; /* Ensure the tooltip is above other elements */
+  }
+
 
   /* styles.css - Object Styling */
 #cameraObject {
@@ -98,3 +107,5 @@ html, body {
 #shellObject:hover {
   transform: scale(1.15); /* Scale up the image on hover */
 }
+
+
