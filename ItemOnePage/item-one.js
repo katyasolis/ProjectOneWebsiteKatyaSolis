@@ -1,9 +1,16 @@
 function setup() {
-    createCanvas(window.innerWidth, window.innerHeight); //Create a canvas that is the size of the window
-    CanvasCaptureMediaStreamTrack.position(0, 0); //Set the position of the canvas to (0, 0)
-    canvas.style('z-index', '-1');
-    canvas.style('position', 'fixed');
-  }
+  // Get the canvas that Processing-js will use
+  let canvas = createCanvas(400, 400);
+  canvas.parent('canvasContainer');
+}
+
+//button to main
+document.addEventListener('DOMContentLoaded', (event) => {
+  const button = document.getElementById('mainButton');
+  button.addEventListener('click', () => {
+    window.location.href = "http://127.0.0.1:3000/MainPage/index.html"; // Replace with your desired URL
+  });
+});
 
   function windowResized() {
     resizeCanvas(window.innerWidth, window.innerHeight); //Resize the canvas to the size of the window

@@ -1,5 +1,5 @@
 let canvas; //Declare a variable to store the canvas
-let Room = select("#environment");
+let Room = select("environment");
 let Camera = select("#cameraObject");
 let Mirror = select("#mirrorObject");
 let Shell = select("#shellObject");
