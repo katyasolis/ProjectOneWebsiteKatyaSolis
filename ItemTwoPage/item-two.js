@@ -11,3 +11,9 @@ function setup() {
       window.location.href = "http://127.0.0.1:3000/MainPage/index.html"; // Replace with your desired URL
     });
   });
+
+  function windowResized() {
+    resizeCanvas(window.innerWidth, window.innerHeight); //Resize the canvas to the size of the window
+    mouseX = width/2;
+    mouseY = height/2;
+  }

@@ -1,6 +1,13 @@
-img {
-    width: 100%;
+html, body {
+    margin: 0;
+    padding: 0;
     height: 100%;
+    background-color: #eedba8; /* Replace with your desired background color */
+  }
+
+img {
+    width: 30%;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
     margin: 0 auto;
@@ -9,6 +16,42 @@ img {
     margin-bottom: 10px;
 }
 
-body {
-    background-color: beige;
-}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .container h1 {
+    font-size: 1.5rem;
+    color: rgb(66, 66, 66);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .container p {
+    font-size: 1rem;
+    color: rgb(95, 95, 95);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .container button {
+    background-color: rgb(154, 154, 199);
+    color: #111718;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+  }
+  
+  .container button:hover {
+    background-color: #1a2324;
+    color: #f3f3d3;
+  }
