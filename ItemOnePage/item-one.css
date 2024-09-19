@@ -13,6 +13,26 @@ h2 {
   text-shadow: 0 0 5px rgba(166, 166, 194, 0.5);
 }
 
+h2:hover {
+  color: rgb(100, 164, 180);
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+h3 {
+  text-align: center;
+  color:#f5f1eb93
+}
+
+h4 {
+  text-align: center;
+  color:#f5f1eb93
+}
+
+h6 {
+  text-align: center;
+  color:#f5f1eb52;
+}
+
 img {
   position: relative;
   display: block;
@@ -57,30 +77,74 @@ a:hover {
 
 .container h1 {
   font-size: 1.5rem;
-  color: white;
+  color: rgb(66, 66, 66);
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .container p {
   font-size: 1rem;
-  color: white;
+  color: rgb(95, 95, 95);
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .container button {
-  background-color: #f9f871;
-  color: #6aaab3;
+  background-color: rgb(166, 166, 194);
+  color: #111718;
   border: none;
   padding: 10px 20px;
   font-size: 1rem;
   border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
 }
 
 .container button:hover {
-  background-color: #6aaab3;
-  color: #f9f871;
+  background-color: #1a2324;
+  color: #f3f3d3;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Center the images horizontally */
+  align-items: center; /* Center the images vertically */
+  gap: 20px; /* Optional: Add space between the images */
+}
+
+#first-phone-cam {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 10%;
+  max-width: 400px;
+  height: auto;
+  border: 2px solid rgb(203, 203, 209);
+  border-radius: 10px;
+  left: 30vw;
+}
+
+#auto-focus {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 10%;
+  max-width: 400px;
+  height: auto;
+  border: 2px solid rgb(203, 203, 209);
+  border-radius: 10px;
+}
+
+#kodak {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 10%;
+  max-width: 400px;
+  height: auto;
+  border: 2px solid rgb(203, 203, 209);
+  border-radius: 10px;
+  left: 5vw;
+  margin: 0;
 }

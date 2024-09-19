@@ -15,7 +15,7 @@ let tooltip;
     canvas.style('z-index', '-1');
     canvas.style('position', 'fixed');
 
-
+    //Mouse Pressed over Objects
     Camera.mousePressed(() => {
       goToDifferentPage();
     });
@@ -29,7 +29,7 @@ let tooltip;
     });
   }
 
-
+  //Different Pages
   function goToDifferentPage(){
     window.location.href = "http://127.0.0.1:3000/ItemOnePage/item-one.html";
   }
@@ -49,24 +49,64 @@ let tooltip;
   }
 
 
+  //Event listeners to set up object's tooltips
   document.addEventListener('DOMContentLoaded', (event) => {
     const cameraObject = document.getElementById('cameraObject');
+    const mirrorObject = document.getElementById('mirrorObject');
+    const shellObject = document.getElementById('shellObject');
     const tooltip = document.getElementById('tooltip');
   
+    // Tooltip for cameraObject
     cameraObject.addEventListener('mouseover', (e) => {
-      tooltip.innerHTML = 'This is a camera'; // Set the tooltip text
+      tooltip.innerHTML = 'I shutter and I click and a snap a pic'; // Set the tooltip text
       tooltip.style.display = 'block';
-      tooltip.style.left = `${e.pageX + 10}px`;
-      tooltip.style.top = `${e.pageY + 10}px`;
+      tooltip.style.left = `${e.pageX + 2}px`;
+      tooltip.style.top = `${e.pageY + 2}px`;
     });
   
     cameraObject.addEventListener('mousemove', (e) => {
-      tooltip.style.left = `${e.pageX + 10}px`;
-      tooltip.style.top = `${e.pageY + 10}px`;
+      tooltip.style.left = `${e.pageX + 2}px`;
+      tooltip.style.top = `${e.pageY + 2}px`;
     });
   
     cameraObject.addEventListener('mouseout', () => {
       tooltip.style.display = 'none';
     });
+  
+    // Tooltip for mirrorObject
+    mirrorObject.addEventListener('mouseover', (e) => {
+      tooltip.innerHTML = 'Mirror Mirror on the wall...'; // Set the tooltip text
+      tooltip.style.display = 'block';
+      tooltip.style.left = `${e.pageX + 2}px`;
+      tooltip.style.top = `${e.pageY + 2}px`;
+    });
+  
+    mirrorObject.addEventListener('mousemove', (e) => {
+      tooltip.style.left = `${e.pageX + 2}px`;
+      tooltip.style.top = `${e.pageY + 2}px`;
+    });
+  
+    mirrorObject.addEventListener('mouseout', () => {
+      tooltip.style.display = 'none';
+    });
+  
+    // Tooltip for shellObject
+    shellObject.addEventListener('mouseover', (e) => {
+      tooltip.innerHTML = 'Swooshhhhh... Mr. Krabs?'; // Set the tooltip text
+      tooltip.style.display = 'block';
+      tooltip.style.left = `${e.pageX + 2}px`;
+      tooltip.style.top = `${e.pageY + 2}px`;
+    });
+  
+    shellObject.addEventListener('mousemove', (e) => {
+      tooltip.style.left = `${e.pageX + 2}px`;
+      tooltip.style.top = `${e.pageY + 2}px`;
+    });
+  
+    shellObject.addEventListener('mouseout', () => {
+      tooltip.style.display = 'none';
+    });
   });
 
+
+    
