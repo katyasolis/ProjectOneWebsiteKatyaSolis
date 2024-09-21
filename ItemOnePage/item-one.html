@@ -3,10 +3,9 @@
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="item-one.css">
     <meta charset="utf-8" />
-    <script src="item-one.js"></script>
+    
 
   </head>
   <body>
@@ -31,11 +30,20 @@
         <img id="auto-focus" src="/Images/Polaroid-SX-70.webp" alt="Polaroid SX-70 Auto-focus Camera">
         <img id="kodak" src="/Images/kodak.webp" alt="Kodak Camera">
 
+        <video id="videoElement" autoplay></video>
+        <canvas id="canvasElement" style="display: none;"></canvas>
+        <img id="photoElement" style="display: none;" alt="Capture Photo">
+        <button id="startButton">Start Webcam</button>
+        <button id="captureButton">Capture Photo</button>
+
+        
       <div class="container">
         <button id= "mainButton" >Back to "Junk" Room </button>
      <!-- <a href="http://127.0.0.1:3000/MainPage/index.html">Back to "Junk" Room</a> <!--back to main page-->
+    
+     <script src="item-one.js"></script>
     </main>
     
-    <script src="sketch.js"></script>
   </body>
+  
 </html>
