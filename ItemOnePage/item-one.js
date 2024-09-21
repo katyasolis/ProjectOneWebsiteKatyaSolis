@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     mouseY = height/2;
   }
 
+
+  //Webcam code
   const videoElement = document.getElementById('videoElement');
   const canvasElement = document.getElementById('canvasElement');
   const photoElement = document.getElementById('photoElement');

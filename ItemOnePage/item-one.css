@@ -1,9 +1,33 @@
 /* item-one.css */
 
 h1 {
+  font-size: 350%;
   color: rgb(203, 203, 209);
   text-align: left; 
   font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+#camRhyme { 
+  font-size: 120%;
+  font-family:'Courier New', Courier, monospace;
+  text-align: center;
+  color:rgb(91, 190, 214);
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  animation: marquee 20s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 h2 {
@@ -147,4 +171,17 @@ a:hover {
   border-radius: 10px;
   left: 5vw;
   margin: 0;
+}
+
+
+#startButton {
+  background-color:rgb(146, 38, 38);
+  color:rgb(255, 255, 255)
+  
+}
+
+#captureButton {
+  background-color:rgb(60, 180, 36);
+  color:rgb(255, 255, 255)
+ 
 }
