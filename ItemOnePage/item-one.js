@@ -25,7 +25,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const photoElement = document.getElementById('photoElement');
   const startButton = document.getElementById('startButton');
   const captureButton = document.getElementById('captureButton');
-  
+  const stopButton = document.getElementById('stopButton');
+  const downloadButton = document.getElementById('downloadButton');
+
   let stream;
   
   async function startWebcam() {
@@ -34,6 +36,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
           videoElement.srcObject = stream;
           startButton.disabled = true;
           captureButton.disabled = false;
+          stopButton.disabled = false;
+          downloadButton.disabled = true;
       } catch (error) {
           console.error('Error accessing webcam:', error);
       }
@@ -48,6 +52,29 @@ document.addEventListener('DOMContentLoaded', (event) => {
       const photoDataUrl = canvasElement.toDataURL('image/jpeg');
       photoElement.src = photoDataUrl;
       photoElement.style.display = 'block';
+      downloadButton.disabled = false;
   }
-  
   captureButton.addEventListener('click', capturePhoto);
+
+  function stopWebcam() {
+    if (stream) {
+        stream.getTracks().forEach(track => track.stop());
+        videoElement.srcObject = null;
+        startButton.disabled = false;
+        captureButton.disabled = true;
+        stopButton.disabled = true; 
+        downloadButton.disabled = true;
+    }
+}
+  stopButton.addEventListener('click', stopWebcam);
+
+  function downloadPhoto() {
+    const link = document.createElement('a');
+    link.href = photoElement.src;
+    link.download = 'captured_photo.jpg';
+    link.click();
+    photoElement.style.display = 'none'; // Hide the photo after downloading
+    downloadButton.disabled = true; // Disable download button after downloading
+  }
+  downloadButton.addEventListener('click', downloadPhoto);
+  
